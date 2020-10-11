@@ -1,0 +1,141 @@
+body{
+background: linear-gradient(to left bottom, white, yellow);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h1{
+    text-align: center;
+    color: lightgreen;
+}
+/* Рейтинг доброты */
+.rating-result {
+    width: 265px;
+    margin: 0 auto;
+}
+.rating-result span {
+    padding: 0;
+    font-size: 40px;
+    line-height: 1;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+    content: '★';
+}
+.rating-result > span.active {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+
+
+/*Переключатель списка в плитки*/
+input {
+    position: absolute;
+    top: 10px;
+    right: 170px;
+}
+
+label {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+/* Изменение цвета ссылки (имени) и прозрачности картинки */
+.name:hover, div:hover + section .name {
+    color: red;
+}
+
+article:hover .image_layout, .image_layout:hover {
+    opacity: 0.7;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #f00;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.categories {
+    color: gray;
+}
+
+
+/* Отображение плиткой */
+article, img {
+    width: 300px;
+}
+
+article {
+    display: inline-block;
+    margin: 20px 0 0 80px;
+    height: 600px;
+    vertical-align: top;
+}
+
+.image_layout {
+    height: 201px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.name {
+    font-size: 1.5rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Отображение списком */
+input:checked ~ article {
+    display: block;
+    width: 1210px;
+    margin: auto;
+    height: 270px;
+    margin-top: 50px;
+}
+
+input:checked ~ article .image_layout img {
+    width: 200px;
+}
+
+input:checked ~ article .image_layout {
+    display: inline-block;
+    width: 200px;
+}
+
+input:checked ~ article .specifications {
+    display: inline-block;
+    width: 600px;
+}
+
+input:checked ~ article .description {
+    display: inline-block;
+    width: 300px;
+}
+
+input:checked ~ article .specifications, input:checked ~ article .description {
+    margin: 0 0 0 50px;
+}
+
+input:checked ~ article, input:checked ~ article .specifications, input:checked ~ article .description, input:checked ~ article .image_layout {
+    height: 270px;
+}
+
+input:checked ~ article .specifications, input:checked ~ article .description {
+    vertical-align: top;
+}
+
+input:checked ~ article .image_layout img {
+    top: 0;
+}

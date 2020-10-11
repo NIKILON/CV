@@ -1,0 +1,23 @@
+div{
+    color:#444;
+
+}
+p::first-letter{
+    letter-spacing: 2px;
+    font-family: cursive;
+    font-size: 20px;
+}
+div.head{
+    text-shadow:2px 2px 1px currentColor,
+    1px 1px 1px white;
+    text-align: center;
+}
+div.headsec{
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+p{
+    text-indent: 3em;
+    hyphens: manual;
+}

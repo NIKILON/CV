@@ -1,0 +1,58 @@
+.animation{
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+    animation-name: first;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
+    transform: translateX(100px) translateY(100%) scale(2) rotate(145deg);
+
+}
+.animation:hover{
+    animation-name: anim;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes anim {
+    from{background-color: #f00}
+    to{background-color: #ff0}
+}
+
+
+
+
+@keyframes first {
+    0%{transform: translate(0,0)}
+    10%{
+        transform: translateX(100px);
+
+    }
+    20%{
+        transform:translateX(100px) translateY(100%);
+
+    }
+    30%{transform: translateX(100px) translateY(100%) scale(2) ;
+
+       }
+    40%,60%{transform: translateX(100px) translateY(100%) scale(2) rotate(145deg);
+       }
+    70%{transform: translateX(100px) translateY(100%) scale(2) ;
+
+    }
+    80%{
+        transform:translateX(100px) translateY(100%);
+
+    }
+    90%{
+        transform: translateX(100px);
+
+    }
+    100%{transform: translate(0,0)}
+}
+

@@ -1,0 +1,20 @@
+aside{
+    position: fixed;
+    right: 25px;
+    top: 25px;
+
+    border: 1px solid green;
+    width: 150px;
+    box-sizing: border-box;
+    padding: 10px 10px 20px;
+}
+button{
+    background: #0a0;
+    color: #fff;
+    border: none;
+
+
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+}
